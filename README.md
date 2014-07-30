@@ -1,6 +1,9 @@
 financial_fundamentals
 ======================
 
+Note: Planning on revamping dependencies and changing the project slightly. Stay tuned. -jlovison
+
+
 Find XBRL filings on the SEC's edgar and extract accounting metrics.
 See the blog @ [http://andrewonfinance.blogspot.com/](http://andrewonfinance.blogspot.com/).
 Caching is provided by my vector_cache package, https://github.com/andrewkittredge/vector_cache.
