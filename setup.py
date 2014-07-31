@@ -1,16 +1,16 @@
 from setuptools import setup, find_packages
 
-version = '0.2.3'
+version = '0.3.0'
 desc = '''\
 FinancialFundamentals
 =========================
-:Author: Andrew Kittredge
+:Authors: Josh Lovison, Andrew Kittredge
 :Version: $Revision: {}
-:Copyright: Andrew Kittredge
+:Copyright: Josh Lovison, Andrew Kittredge
 :License: Apache Version 2
 
 
-FinancialFundamentals caches financial data to speed alogirithm development.  It is developed with the zipline backtesting library in mind. Currently it caches prices downloaded from yahoo and two accounting metrics extracted from XBRL downloaded from the SEC's Edgar system.
+FinancialFundamentals is designed around pulling filings from the SEC's EDGAR system and extracting defined metrics from the filings.
 
 FinancialFundamentals is under active development, comments, suggestions, and bug reports are appreciated.
 
@@ -18,10 +18,10 @@ FinancialFundamentals is under active development, comments, suggestions, and bu
 
 setup(name='FinancialFundamentals',
       version=version,
-      description='Caching for financial metrics.',
+      description='Extraction of financial data from the SEC EDGAR database.',
       long_description=desc,
-      author='Andrew Kittredge',
-      author_email='andrewlkittredge@gmail.com',
+      author='Josh Lovison',
+      author_email='jlovison@gmail.com',
       license='Apache 2.0',
       packages=find_packages(),
       classifiers=[
@@ -41,14 +41,9 @@ setup(name='FinancialFundamentals',
 	'requests',
 	'BeautifulSoup',
 	'mock',
-	'pandas',
 	'xmltodict',
 	'blist',
 	'python-dateutil==1.5',
-	'vector_cache',
 	],
-      dependency_links=[
-	'http://github.com/andrewkittredge/vector_cache/tarball/master#egg=vector_cache',
-      ],
-      url='https://github.com/andrewkittredge/financial_fundamentals',
+      url='https://github.com/jlovison/financial_fundamentals',
 )
