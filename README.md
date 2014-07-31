@@ -6,12 +6,12 @@ Note: Planning on revamping dependencies and changing the project slightly now t
 
 Find XBRL filings on the SEC's edgar and extract accounting metrics.
 
-	import pandas as pd
-	import financial_fundamentals as ff
+	# Get the filings
+	import financial_fundamentals.edgar as edgar
+	filings = edgar.get_filings(symbol='MSFT', filing_type='10-K)
 	
-	date_range = pd.date_range('2012-1-1', '2013-12-31')
-	required_data = pd.DataFrame(columns=['MSFT', 'GOOG', 'YHOO', 'IBM'], index=date_range)
-
-	eps = ff.accounting_metrics.earnings_per_share(required_data)
-	print eps
-
+	# Get the Metrics
+	import financial_fundamentals.accounting_metrics EPS
+	eps_values = []
+	for filing in filings:
+	    eps_values.append(filing.first_tradable_date, EPS.value_from_filing(filing))
