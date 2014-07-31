@@ -114,7 +114,7 @@ class XBRLDocument(object):
         metric_node = sorted(metric_nodes,
                              key=key_func, 
                              reverse=True)[0]
-        return float(metric_node['#text'])
+        return metric_node['#text']
     
     def latest_metric_value(self, metric_params):
         contexts = self.contexts(context_type=metric_params.context_type)
