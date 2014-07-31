@@ -5,7 +5,7 @@ Find XBRL filings on the SEC's edgar and extract accounting metrics.
 
 	# Get the filings
 	import financial_fundamentals.edgar as edgar
-	filings = edgar.get_filings(symbol='MSFT', filing_type='10-K)
+	filings = edgar.get_filings(symbol='MSFT', filing_type='10-K')
 	
 	# Get the Metrics
 	import financial_fundamentals.accounting_metrics EPS
