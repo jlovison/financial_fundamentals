@@ -1,9 +1,6 @@
 financial_fundamentals
 ======================
 
-Note: Planning on revamping dependencies and changing the project slightly now that original author abandoned. Stay tuned. -jlovison
-
-
 Find XBRL filings on the SEC's edgar and extract accounting metrics.
 
 	# Get the filings
